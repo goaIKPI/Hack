@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/group"
+                android:background="#00000000"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_green_24dp"/>
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="80dp"
+                android:layout_toStartOf="@+id/group"
+                android:background="#00000000"
+                android:src="@drawable/ic_notifications_grey_toolbar_24dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/myHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Профиль"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#343434"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvEvents"
+            android:layout_below="@+id/myHelp"
+            android:layout_above="@+id/addModers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/addModers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background"
+            android:text="добавить событие"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</LinearLayout>
