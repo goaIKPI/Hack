@@ -18,7 +18,7 @@
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_person_green_24dp"/>
+                android:src="@drawable/ic_person_gray_toolbar_24dp"/>
 
             <ImageButton
                 android:id="@+id/notification"
@@ -249,7 +249,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/button_background"
-            android:text="Добавить модератора"
+            android:text="Далее"
             android:textColor="#fff" />
 
     </RelativeLayout>

@@ -13,13 +13,14 @@
             android:orientation="horizontal">
             <ImageButton
                 android:id="@+id/group"
-                android:background="#fff"
+                android:background="#00000000"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="10dp"
                 android:layout_margin="10dp"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_person_black_24dp"/>
+                android:src="@drawable/ic_person_green_24dp"/>
 
             <ImageButton
                 android:id="@+id/notification"
@@ -30,7 +31,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="80dp"
                 android:layout_toStartOf="@+id/group"
-                android:background="#fff"
+                android:background="#00000000"
                 android:src="@drawable/ic_notifications_grey_toolbar_24dp" />
         </RelativeLayout>
 
@@ -122,14 +123,68 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             />
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvModers"
+        <RelativeLayout
             android:layout_below="@+id/moders"
-            android:layout_above="@+id/addModers"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/l1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:background="@drawable/item_help_style">
+            <ImageView
+                android:id="@+id/moderImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_background"
+                android:background="@drawable/image_item_help"/>
+            <TextView
+                android:id="@+id/nameModer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/moderImage"
+                android:layout_marginStart="10dp"
+                android:text="Мария Балконская"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/moderImage"
+                android:layout_below="@+id/nameModer"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="12sp"
+                android:text="balokonskaya@mail.ru"/>
 
-        </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/l1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/item_help_style">
+            <ImageView
+                android:id="@+id/moderImage1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_background"
+                android:background="@drawable/image_item_help"/>
+            <TextView
+                android:id="@+id/nameModer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/moderImage1"
+                android:layout_marginStart="10dp"
+                android:text="Алексей Смаков"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/moderImage1"
+                android:layout_below="@+id/nameModer1"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="12sp"
+                android:text="smakov1990@mail.ru"/>
+
+        </RelativeLayout>
 
         <Button
             android:id="@+id/addModers"
